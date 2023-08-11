@@ -1,0 +1,177 @@
+body {
+  background-color: white;
+  font: 400 16px Roboto, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+  color: #4d2323;
+}
+* {
+  box-sizing: border-box;
+}
+header,
+main,
+footer {
+  padding: 30px 20px;
+  border: 1px solid red;
+}
+.container {
+  max-width: 1440px;
+  min-height: 50px;
+  margin: 0 auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+.nav-link {
+  text-decoration: none;
+  padding: 0 12px;
+  line-height: 50px;
+  transition: 0.3s;
+  color: #3a9379;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.nav-link:active {
+  color: #3a9379;
+}
+.nav-link:visited {
+  color: #ffd5ff;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.section {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  background: #3a9379;
+  float: left;
+  border-radius: 20px;
+}
+.avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 240px;
+  border-radius: 15%;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+  transition: 0.3s;
+}
+.header {
+  background: white;
+}
+#profile {
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 100%;
+  padding: 50px 20px 35px;
+  color: white;
+  font-style: normal;
+  letter-spacing: 10px;
+  word-spacing: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.profile-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin: 40px;
+}
+h1 {
+  position: relative;
+  font-size: 32px;
+  font-weight: 300;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 300;
+}
+.contacts-list {
+text-transform: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+.contacts-link {
+  text-decoration: none;
+  letter-spacing: 5px;
+  padding: 0 12px;
+  line-height: 50px;
+  transition: 0.3s;
+  color: #463f3f
+}
+.contacts-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.contacts-link:active {
+  color: #463f3f;
+}
+.contacts-link:visited {
+  color: #463f3f;
+}
+
+.programming-languages,
+.skills-items,
+#summary,
+#projects {
+  margin-bottom: 20px;
+  width: 50%;
+  float: left;
+  flex-wrap: wrap;
+}
+@media (max-width: 840px) {
+  #profile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .section {
+    width: 100%;
+  }
+  .nav-list {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .nav-link {
+    line-height: initial;
+    padding: 10px 0;
+  }
+  .profile-title {
+    margin: 20px;
+  }
+}
+rss {
+  width: 121px;
+  height: 45px;
+  background-image: url("");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
